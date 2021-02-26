@@ -1,21 +1,22 @@
 <template>
-  <Header />
-  <main class="px-4 py-10 sm:px-10 lg:max-w-5xl lg:mx-auto">
-    <div
-      class="flex justify-between items-center border-b-2 border-emerald-500 pb-3 border-dashed"
-    >
-      <h1 class="text-3xl font-semibold text-emerald-500">Inbox</h1>
-      <OutlineButton>New Email</OutlineButton>
-    </div>
-    <div>
-      <ul class="py-4">
-        <template v-for="email in emails" :key="email.id">
-          <EmailItem :email="email" />
-        </template>
-      </ul>
-    </div>
-  </main>
-  <Footer />
+  <div>
+    <Header />
+    <main class="px-4 py-10 sm:px-10 lg:max-w-5xl lg:mx-auto">
+      <div
+        class="flex justify-between items-center border-b-2 border-emerald-500 pb-3 border-dashed"
+      >
+        <h1 class="text-3xl font-semibold text-emerald-500">Inbox</h1>
+        <OutlineButton>New Email</OutlineButton>
+      </div>
+      <div>
+        <ul class="py-4">
+          <EmailItem v-for="email in emails" :key="email.id" :email="email" />
+        </ul>
+      </div>
+    </main>
+    <!-- <EmailItem v-for="email in emails" :key="email.id" :email="email" /> -->
+    <Footer />
+  </div>
 </template>
 
 <script setup>
