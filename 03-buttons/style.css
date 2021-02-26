@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
+.btn {
+  @apply px-2 py-1 rounded-lg shadow-sm bg-transparent border transition-colors duration-150 ease-in-out bg-cyan-500 border-transparent text-white hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-cyan-400;
+}
+.btn--outline {
+  @apply px-2 py-1 rounded-lg shadow-sm bg-transparent border transition-colors duration-150 ease-in-out border-cyan-500 bg-white text-cyan-500 hover:bg-cyan-500 hover:text-white focus:bg-cyan-500 focus:text-white  focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+.btn--light {
+  @apply px-2 py-1 rounded-lg shadow-sm bg-transparent border transition-colors duration-150 ease-in-out border-transparent bg-cyan-100 text-cyan-900 hover:bg-cyan-200 focus:bg-cyan-200 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
 @tailwind utilities;
