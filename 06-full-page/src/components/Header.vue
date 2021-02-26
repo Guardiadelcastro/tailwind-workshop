@@ -1,10 +1,10 @@
 <template>
-  <header class="px-4 py-2 flex justify-between items-center md:px-6 md:py-4">
+  <header class="px-4 py-2 flex justify-between items-center">
     <div
-      class="px-3 py-1 flex items-center bg-emerald-200 text-emerald-900 rounded-full"
+      class="flex items-center px-2 py-1 rounded-full bg-cyan-300 text-cyan-900"
     >
       <svg
-        class="h-6 w-6"
+        class="h-8 w-8 mr-2"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -17,11 +17,11 @@
           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
         />
       </svg>
-      <span class="ml-2 text-lg">Mail</span>
+      <span class="text-xl font-semibold">Mail</span>
     </div>
-    <div class="flex items-center space-x-2">
+    <div class="flex space-x-2">
       <button
-        class="p-1 rounded-full bg-transparent text-gray-600 focus:outline-none focus:bg-gray-100 focus:ring-2 focus:ring-gray-500 transition-colors ease-in-out duration-100 sm:hidden"
+        class="p-1 bg-transparent text-gray-600 rounded-full focus:outline-none focus:bg-gray-200 focus:text-gray-800 sm:hidden"
       >
         <svg
           class="h-6 w-6"
@@ -38,8 +38,9 @@
           />
         </svg>
       </button>
+      <!-- Hidden on xs show on sm -->
       <div
-        class="hidden sm:flex sm:items-center sm:rounded-full sm:bg-gray-200 sm:p-1 focus-within:ring-1 focus-within:ring-cyan-300"
+        class="hidden sm:flex sm:items-center sm:bg-white sm:px-2 sm:py-1 rounded-full border border-gray-900 border-opacity-50 focus-within:border-cyan-500"
       >
         <svg
           class="h-5 w-5 text-gray-500"
@@ -56,14 +57,14 @@
           />
         </svg>
         <input
-          class="bg-transparent px-2 border-0 focus:outline-none"
+          class="pl-2 focus:outline-none"
           type="text"
           aria-label="search emails"
           placeholder="Search..."
         />
       </div>
       <button
-        class="p-1 rounded-full bg-cyan-200 text-cyan-700 hover:bg-cyan-200 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition-colors ease-in-out duration-100"
+        class="p-1 bg-blue-500 text-white rounded-full focus:outline-none focus:opacity-80"
       >
         <svg
           class="h-6 w-6"

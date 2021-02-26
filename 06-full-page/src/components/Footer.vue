@@ -1,11 +1,11 @@
 <template>
-  <footer
-    class="px-5 bg-emerald-900 text-emerald-50 divide-y sm:px-10 lg:px-28"
-  >
-    <div class="py-5 grid grid-cols-1 gap-4 text-lg sm:grid-cols-3">
-      <div class="flex flex-col items-center space-y-2 sm:items-start">
+  <footer class="bg-cyan-900 text-cyan-50 px-4">
+    <div
+      class="pt-6 pb-3 grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-3 lg:max-w-2xl lg:mx-auto"
+    >
+      <div class="flex flex-col items-center space-y-1 sm:items-start">
         <h2
-          class="uppercase tracking-wide text-xs font-semibold text-emerald-400"
+          class="text-xs uppercase tracking-wide font-semibold text-cyan-400 text-opacity-80"
         >
           Products
         </h2>
@@ -13,9 +13,9 @@
         <a class="hover:underline" href="#">Calendar</a>
         <a class="hover:underline" href="#">Contacts</a>
       </div>
-      <div class="flex flex-col items-center space-y-2 sm:items-start">
+      <div class="flex flex-col items-center space-y-1 sm:items-start">
         <h2
-          class="uppercase tracking-wide text-xs font-semibold text-emerald-400"
+          class="text-xs uppercase tracking-wide font-semibold text-cyan-400 text-opacity-80"
         >
           Documentation
         </h2>
@@ -24,15 +24,15 @@
         <a class="hover:underline" href="#">Pricing</a>
         <a class="hover:underline" href="#">FAQ</a>
       </div>
-      <div class="flex flex-col items-center space-y-2 sm:items-start">
+      <div class="flex flex-col items-center space-y-1 sm:items-start">
         <h2
-          class="uppercase tracking-wide text-xs font-semibold text-emerald-400"
+          class="text-xs uppercase tracking-wide font-semibold text-cyan-400 text-opacity-80"
         >
           Contact
         </h2>
-        <span class="flex items-center">
+        <span class="flex items-center space-x-1">
           <svg
-            class="mr-1 h-4 w-4"
+            class="h-4 w-4"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -47,9 +47,9 @@
           </svg>
           <span>555-555-555</span>
         </span>
-        <span class="flex items-center">
+        <span class="flex items-center space-x-1">
           <svg
-            class="mr-1 h-4 w-4"
+            class="h-4 w-4"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -66,10 +66,10 @@
         </span>
       </div>
     </div>
-    <div class="py-4 flex items-center justify-between">
-      <div class="flex items-center">
+    <div class="pb-6 pt-3 flex border-t border-cyan-100">
+      <div class="flex space-x-2 items-center">
         <svg
-          class="h-8 w-8"
+          class="h-6 w-6"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -82,9 +82,8 @@
             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
           />
         </svg>
-        <span class="ml-2 text-lg font-semibold">Mail</span>
+        <span class="text-sm font-semibold">Mail - 2021</span>
       </div>
-      <div class="text-emerald-200">2021</div>
     </div>
   </footer>
 </template>

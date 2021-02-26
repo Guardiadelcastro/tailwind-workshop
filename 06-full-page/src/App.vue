@@ -1,7 +1,14 @@
 <template>
   <Header />
-  <main class="h-screen"></main>
-  <!-- <EmailItem v-for="email in emails" :key="email.id" :email="email" /> -->
+  <main class="h-screen px-6 py-8 bg-red-500 sm:bg-blue-500 xl:bg-gray-500">
+    <div class="pb-2 flex justify-between border-b border-cyan-300">
+      <h1 class="text-2xl text-bold text-cyan-900">Inbox</h1>
+      <LightButton>Create New</LightButton>
+    </div>
+    <ul class="flex flex-col divide-y divide-cyan-100 border-opacity-20">
+      <EmailItem v-for="email in emails" :key="email.id" :email="email" />
+    </ul>
+  </main>
   <Footer />
 </template>
 
@@ -9,7 +16,7 @@
 import { ref } from "vue";
 import Footer from "./components/Footer.vue";
 import Header from "./components/Header.vue";
-import OutlineButton from "./components/OutlineButton.vue";
+import LightButton from "./components/LightButton.vue";
 import EmailItem from "./components/EmailItem.vue";
 
 // This starter template is using Vue 3 experimental <script setup> SFCs
